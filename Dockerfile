@@ -4,7 +4,7 @@ FROM --platform=linux/amd64 python:3.12-slim
 # Set working directory
 WORKDIR /app
 
-# Install system dependencies and ffmpeg
+# Install ffmpeg and other dependencies
 RUN apt-get update && apt-get install -y \
     ffmpeg \
     curl \
