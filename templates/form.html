@@ -10,6 +10,14 @@
     <form action="/" method="POST">
         <label for="url">YouTube URL:</label>
         <input type="text" id="url" name="url" placeholder="Enter YouTube link" required>
+        <br><br>
+        <label for="region">Select Region:</label>
+        <select id="region" name="region">
+            <option value="Ireland" selected>Ireland (Default)</option>
+            <option value="Netherlands">Netherlands</option>
+            <option value="US">United States</option>
+        </select>
+        <br><br>
         <button type="submit">Download</button>
     </form>
 </body>
