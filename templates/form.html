@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download YouTube Video</title>
+    <!-- Link to Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Apply Inter Font */
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212; /* Dark Background */
+            color: #ffffff; /* White Text */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full-screen height */
+        }
+
+        form {
+            background-color: #1e1e1e; /* Slightly lighter dark for contrast */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-family: 'Inter', sans-serif;
+        }
+
+        input, select {
+            background-color: #292929;
+            color: #ffffff;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #ffffff;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form action="/" method="POST">
+        <h1>Download YouTube Video</h1>
+        <label for="url">YouTube URL:</label>
+        <input type="text" id="url" name="url" placeholder="Enter YouTube link" required>
+        
+        <label for="region">Select Region:</label>
+        <select id="region" name="region">
+            <option value="Ireland" selected>Ireland (Default)</option>
+            <option value="Netherlands">Netherlands</option>
+            <option value="US">United States</option>
+        </select>
+        
+        <button type="submit">Download</button>
+    </form>
+</body>
+</html>
